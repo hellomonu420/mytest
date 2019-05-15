@@ -1,24 +1,9 @@
 language: python
-
 python:
-  - "3.6"
-   -"3.5"
-
+  - "2.7"
+  - "3.5"
+cache: pip
+install:
+  - pip install -r requirements.txt
 script:
-  - https://github.com/hellomonu420/mytest.git
-
-deploy:
-  provider: pypi
-  user: "monu@directmail.top"
-  password:
-    secure: jJVo/b3QM6bTkXVFWM1W/UuNFuA+twCCHykzAJGqfV2a42npTFL048eRZ9PkbZmH4/Hr7ar/
-6ZXcCklHugyaqS36aNhzCmuISxVZPzTtABsISDTl08owY93/ZKTSHoqaUXM6JRp+kS5yN0nEnbc3egPv
-oUWrq0EF8dPafFGTw5jbrRsOuzCCptimC9o0mhw/DfEeHiLry+Nzz9bVJLtoiSUWnQnQqEBJMHeTmRTb
-RsscB5DggFs1terMHP0rDZmpXXNkvkr5/TcIzN4kjbdiC6+IUP8nuBcUJTuHQXe8gKWa3b5n9IR6O804
-KONuFk0g8+kpBLwKe6Su4ZY1J0+pohf5OhGqvusyDbnDZjLIalvhUzw6OKQrpofY4Qp3mf+dY1rX2saX
-veK4sN6inAxm3VSpXYg08hgd58xUyEOqP1/FjeyVl93TMV6gqAEOcMQZREEfT1sjh4m8tmVJontydszm
-xj5t/o189QBNzL0C6okeDJ0f9pZRkaBsjzPDsiD/RK/e8gwm5gW0Z2iy+fvO5ZR5/M0p/ykmDANwCqng
-8D1O22rnkh7fhqbgxxW5ZHBEe/4A4qn1lKkVx2MpC99Q4m5veTXDvcmO1FjL9cQQyTWstLrLjMJsd7rI
-zw4xjbpKKzz5spBi+eNPUHMbC14Kbl31bQeBT9HLAb/kLcvOXKk=
-
-  server: https://api.packagr.app/public
+  - python app.py
